@@ -46,8 +46,8 @@ export default function Home({
           Welcome to <a href="https://nextjs.org">Next.js with MongoDB! This is NEXT</a>
         </h1>
 
-         <h1>Address Form</h1>
-  <form id="addressForm">
+         <h1 className="title2">Address Form</h1>
+  <form className="form" id="addressForm">
     <label for="streetAddress">Street Address:</label>
     <input type="text" id="streetAddress" required>
     <br>
