@@ -30,6 +30,19 @@ export const getServerSideProps: GetServerSideProps<
     }
   }
 }
+export default function Form() {
+  return (
+    <form action="/api/form" method="post">
+      <label htmlFor="first">First Name</label>
+      <input type="text" id="first" name="first" required />
+
+      <label htmlFor="last">Last Name</label>
+      <input type="text" id="last" name="last" required />
+
+      <button type="submit">Submit</button>
+    </form>
+  )
+}
 
 export default function Home({
   isConnected,
@@ -42,6 +55,8 @@ export default function Home({
       </Head>
 
       <main>
+
+        
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js with MongoDB! This is NEXT</a>
     
