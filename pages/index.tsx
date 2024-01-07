@@ -46,20 +46,8 @@ export default function Home({
           Welcome to <a href="https://nextjs.org">Next.js with MongoDB! This is NEXT</a>
     
         </h1>
-        <h2 className="title">Form</h2>
-export default function Form() {
-  return (
-    <form action="/api/form" method="post">
-      <label htmlFor="first">First Name</label>
-      <input type="text" id="first" name="first" required />
+        <h2 className="subtitle">This is a sample project to connect to MongoDB from Next.js using MongoDB Atlas</h2>
 
-      <label htmlFor="last">Last Name</label>
-      <input type="text" id="last" name="last" required />
-
-      <button type="submit">Submit</button>
-    </form>
-  )
-}
       
 
         {isConnected ? (
