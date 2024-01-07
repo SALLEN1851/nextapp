@@ -44,10 +44,7 @@ export default function Home({
       <main>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js with MongoDB! This is NEXT</a>
-        </h1>
-
-         <h1 className="title2">Address Form</h1>
-  <form className="form" id="addressForm">
+           <form className="container" id="addressForm">
     <label for="streetAddress">Street Address:</label>
     <input type="text" id="streetAddress" required>
     <br>
@@ -62,6 +59,9 @@ export default function Home({
     <br>
     <button type="button" onclick="submitAddress()">Submit</button>
   </form>
+        </h1>
+
+      
 
         {isConnected ? (
           <h2 className="subtitle">You are connected to MongoDB</h2>
