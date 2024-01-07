@@ -44,23 +44,16 @@ export default function Home({
       <main>
         <h1 className="title">
           Welcome to <a href="https://nextjs.org">Next.js with MongoDB! This is NEXT</a>
-           <form className="container" id="addressForm">
-    <label for="streetAddress">Street Address:</label>
-    <input type="text" id="streetAddress" required>
-    <br>
-    <label for="city">City:</label>
-    <input type="text" id="city" required>
-    <br>
-    <label for="state">State:</label>
-    <input type="text" id="state" required>
-    <br>
-    <label for="zipcode">Zipcode:</label>
-    <input type="text" id="zipcode" required>
-    <br>
-    <button type="button" onclick="submitAddress()">Submit</button>
-  </form>
+    
         </h1>
 
+      <form action="/send-data-here" method="post">
+        <label for="first">First name:</label>
+        <input type="text" id="first" name="first" />
+        <label for="last">Last name:</label>
+        <input type="text" id="last" name="last" />
+        <button type="submit">Submit</button>
+      </form>
       
 
         {isConnected ? (
